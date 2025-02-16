@@ -27,7 +27,7 @@ interface Comment {
         // Создаем строку для вывода всех данных
         let output = '';
         data.forEach((comment) => {
-          output += `<div class="${comment.id}">${comment.email}</div>`;
+          output += `<div id="${comment.id}">${comment.email}</div>`;
         });
         // Выводим данные в элемент
         addData.innerHTML = output;
